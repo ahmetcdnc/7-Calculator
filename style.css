@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* container oluşturduk. */
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #D1DBBD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.calculator .holder{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.calculator input#hold {
+    font-size: 20px;
+    width: 60px;
+    height: 25px;
+    background: #DCA153;
+    color: #fff;
+    cursor: auto;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0,0,0, 0.2);
+}
+
+
+.calculator{
+    background-color: #91AA9D;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.calculator input#val, button{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    /* gölgelendirme */
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0,0,0, 0.2);
+    background: #3E606F;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+
+    /* scale işlemi için efekt */
+    transition: transform 0.2s ease;
+
+}
+
+.calculator .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+
+}
+
+/* inputa css */
+.calculator .display input#val{
+    text-align: right;
+    /* satırı kapladık */
+    flex: 1;
+    font-size: 24px;
+    box-shadow: none;
+    cursor: auto;
+    /* İçeri girilen değere padding verdik */
+    padding-right: 10px;
+}
+
+.calculator .equal{
+    width: 140px;
+
+}
+
+.calculator button:hover {
+    /* Hover durumunda arka plan rengini değiştir */
+    background-color: #4E748B; 
+    /* Yazı rengini değiştir */
+    color: #fff; 
+    /* Butonu biraz büyüt */
+    transform: scale(1.1); 
+    /* Gölge efekti */
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.1), 3px 3px 10px rgba(0,0,0, 0.2); 
+    /* Kenarlık ekle */
+    border: 2px solid #4E748B; 
+}
+
+.clicked{
+     /* Tıklanan butonun arka plan rengini değiştir */
+     background-color: #FF5733; 
+     /* Yazı rengini değiştir */
+     color: #fff; 
+     /* Butonu biraz büyüt */
+     transform: scale(1.1); 
+     /* Gölge efekti */
+     box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.1), 3px 3px 10px rgba(0,0,0, 0.2); 
+     /* Kenarlık ekle */
+     border: 2px solid #FF5733; 
+}
